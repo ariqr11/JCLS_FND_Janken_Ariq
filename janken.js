@@ -22,15 +22,15 @@ const pilihan = (player) => {
     clearInterval(gerak);
     if (player == 1) {
         let geraklagi = setInterval(gambar, 100)
-        setTimeout(() => clearInterval(geraklagi), 800);
+        setTimeout(() => clearInterval(geraklagi), Math.random() * 1000);
         document.getElementById("pilihan").src = `${img_array[0]}`
     } else if (player == 2) {
         let geraklagi = setInterval(gambar, 100)
-        setTimeout(() => clearInterval(geraklagi), 800);
+        setTimeout(() => clearInterval(geraklagi), Math.random() * 1000);
         document.getElementById("pilihan").src = `${img_array[1]}`
     } else if (player == 3) {
         let geraklagi = setInterval(gambar, 100)
-        setTimeout(() => clearInterval(geraklagi), 800);
+        setTimeout(() => clearInterval(geraklagi), Math.random() * 1000);
         document.getElementById("pilihan").src = `${img_array[2]}`
     }
     setTimeout(() => randomIndex = img_array.findIndex((val) => document.getElementById("komputer").src.includes(val)), 1000);
