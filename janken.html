@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCLS_FND_Janken_Ariq</title>
+</head>
+
+<body>
+    <center>
+        <h1>Janken</h1>
+        <img src="gunting.png" width="100px">
+        <img src="batu.png" width="100px">
+        <img src="kertas.png" width="100px">
+        <br>
+        <button type="button" onclick="pilihan(1)">Gunting</button>
+        <button type="button" onclick="pilihan(2)">Batu</button>
+        <button type="button" onclick="pilihan(3)">Kertas</button>
+        <br>
+        <h2>Player</h2>
+        <img id="pilihan" width="100px">
+        <br>
+        <img src="versus.png" width="100px" />
+        <h2>PC</h2>
+        <img id="komputer" width="100px" />
+        <h1 id="hasil"></h1>
+        <h1 id="klasemen"></h1>
+    </center>
+</body>
+
+<script src="./janken.js"></script>
+
+</html>
