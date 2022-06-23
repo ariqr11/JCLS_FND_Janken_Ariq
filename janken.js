@@ -19,6 +19,8 @@ let gerak = setInterval(gambar, 100);
 let randomIndex = 0;
 
 const pilihan = (player) => {
+    document.getElementById("hasil").innerHTML = "";
+    document.getElementById("klasemen").innerHTML = "";
     clearInterval(gerak);
     if (player == 1) {
         let geraklagi = setInterval(gambar, 100)
